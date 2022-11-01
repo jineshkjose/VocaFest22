@@ -168,6 +168,10 @@ MobNoString.trim();
     if(inputString.length()==14)
     {
       //SendMessage(MobNoString);
+
+       Serial2.print ("ATD");
+       Serial2.print (MobNoString);
+       Serial2.println (";\r");
       Serial.println("sending sms to "+MobNoString);
       Serial.println (MsgString);
     }
