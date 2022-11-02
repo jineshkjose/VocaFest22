@@ -90,9 +90,16 @@ void loop() {
   digitalWrite(relay3, HIGH);
   digitalWrite(relay4, HIGH);
   digitalWrite(relay5, HIGH);
-  
-      Serial.println("Relay1");
+Serial.println("Relay1");
       MsgString="option one selected";
+  delay(5000);
+digitalWrite(relay1, HIGH);
+digitalWrite(relay2,  HIGH);
+digitalWrite(relay3,  HIGH);
+digitalWrite(relay4,   HIGH);
+digitalWrite(relay5,   HIGH);
+  
+      
     }
 
     else if(OptionString=="@b")
@@ -104,7 +111,14 @@ void loop() {
   digitalWrite(relay5, HIGH);
       Serial.println("Relay2");
 
-       MsgString="option two selected";
+       MsgString="pls visit tinyurl.com/svhss22";
+
+       delay(5000);
+digitalWrite(relay1, HIGH);
+digitalWrite(relay2,  HIGH);
+digitalWrite(relay3,  HIGH);
+digitalWrite(relay4,   HIGH);
+digitalWrite(relay5,   HIGH);
     }
 
     else if(OptionString=="@c")
@@ -117,6 +131,13 @@ void loop() {
   
       Serial.println("Relay3");
        MsgString="option three selected";
+
+       delay(5000);
+digitalWrite(relay1, HIGH);
+digitalWrite(relay2,  HIGH);
+digitalWrite(relay3,  HIGH);
+digitalWrite(relay4,   HIGH);
+digitalWrite(relay5,   HIGH);
     }
 
     else if(OptionString=="@d")
@@ -130,6 +151,13 @@ void loop() {
   
       Serial.println("Relay4");
        MsgString="option four selected";
+
+       delay(5000);
+digitalWrite(relay1, HIGH);
+digitalWrite(relay2,  HIGH);
+digitalWrite(relay3,  HIGH);
+digitalWrite(relay4,   HIGH);
+digitalWrite(relay5,   HIGH);
     }
 
     else if(OptionString=="@e")
@@ -143,6 +171,13 @@ void loop() {
       Serial.println("Relay5");
 
        MsgString="option five selected";
+       delay(5000);
+digitalWrite(relay1, HIGH);
+digitalWrite(relay2,  HIGH);
+digitalWrite(relay3,  HIGH);
+digitalWrite(relay4,   HIGH);
+digitalWrite(relay5,   HIGH);
+
     }
 
     else if(OptionString=="@f")
@@ -167,11 +202,11 @@ MobNoString.trim();
  Serial.println(inputString.length());
     if(inputString.length()==14)
     {
-      //SendMessage(MobNoString);
+      SendMessage(MobNoString);
 
-       Serial2.print ("ATD");
-       Serial2.print (MobNoString);
-       Serial2.println (";\r");
+     //  Serial2.print ("ATD");
+     //  Serial2.print (MobNoString);
+     //  Serial2.println (";\r");
       Serial.println("sending sms to "+MobNoString);
       Serial.println (MsgString);
     }
