@@ -14,7 +14,7 @@ bool stringComplete = false;  // whether the string is complete
 void SendMessage(String Mno)
 {
   Serial.println ("Sending Message please wait....");
-  Serial2.println("AT+CMGF=1");    //Text Mode initialisation 
+  Serial2.println("AT+CMGF=1");    //Text Mode initialisation
   delay(1000);
   Serial.println ("Set SMS Number");
  // Serial2.println("AT+CMGS=\"+919400086378\"\r"); // Receiver's Mobile Number
@@ -91,15 +91,15 @@ void loop() {
   digitalWrite(relay4, HIGH);
   digitalWrite(relay5, HIGH);
 Serial.println("Relay1");
-      MsgString="option one selected";
+      MsgString="Thank u 4 visiting our stall.pls go to tinyurl.com/svhs22";
   delay(5000);
 digitalWrite(relay1, HIGH);
 digitalWrite(relay2,  HIGH);
 digitalWrite(relay3,  HIGH);
 digitalWrite(relay4,   HIGH);
 digitalWrite(relay5,   HIGH);
-  
-      
+ 
+     
     }
 
     else if(OptionString=="@b")
@@ -111,7 +111,7 @@ digitalWrite(relay5,   HIGH);
   digitalWrite(relay5, HIGH);
       Serial.println("Relay2");
 
-       MsgString="pls visit tinyurl.com/svhss22";
+      MsgString="Thank u 4 visiting our stall.pls go to tinyurl.com/svhs22";
 
        delay(5000);
 digitalWrite(relay1, HIGH);
@@ -128,9 +128,9 @@ digitalWrite(relay5,   HIGH);
   digitalWrite(relay3, LOW);
   digitalWrite(relay4, HIGH);
   digitalWrite(relay5, HIGH);
-  
+ 
       Serial.println("Relay3");
-       MsgString="option three selected";
+       MsgString="Thank u 4 visiting our stall.pls go to tinyurl.com/svhs22";
 
        delay(5000);
 digitalWrite(relay1, HIGH);
@@ -148,9 +148,9 @@ digitalWrite(relay5,   HIGH);
   digitalWrite(relay3, HIGH);
   digitalWrite(relay4, LOW);
   digitalWrite(relay5, HIGH);
-  
+ 
       Serial.println("Relay4");
-       MsgString="option four selected";
+       MsgString="Thank u 4 visiting our stall.pls go to tinyurl.com/svhs22";
 
        delay(5000);
 digitalWrite(relay1, HIGH);
@@ -167,10 +167,10 @@ digitalWrite(relay5,   HIGH);
   digitalWrite(relay3, HIGH);
   digitalWrite(relay4, HIGH);
   digitalWrite(relay5, LOW);
-  
+ 
       Serial.println("Relay5");
 
-       MsgString="option five selected";
+      MsgString="Thank u 4 visiting our stall.pls go to tinyurl.com/svhs22";
        delay(5000);
 digitalWrite(relay1, HIGH);
 digitalWrite(relay2,  HIGH);
