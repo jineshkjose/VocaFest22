@@ -73,75 +73,102 @@ void loop() {
   if (stringComplete) {
 
     inputString.trim();
-    Serial.println(inputString);
+   // Serial.println(inputString);
     OptionString=inputString.substring(0,2);
    
     MobNoString=inputString.substring(3,13);
-     Serial.print("optionstr= ");
-     Serial.println(inputString.substring(0,2));
-     Serial.print("Mobno= ");
-   Serial.println(MobNoString);
+   //  Serial.print("optionstr= ");
+    // Serial.println(inputString.substring(0,2));
+    // Serial.print("Mobno= ");
+ //  Serial.println(MobNoString);
 
      
     if(OptionString=="@a")
     {
+Serial.println(OptionString);
+      MsgString="Thank u 4 visiting our stall.pls go to tinyurl.com/svhs22";
+
+      for(int i=0;i<10;i++)
+      {
+       
+     
       digitalWrite(relay1, LOW);
   digitalWrite(relay2, HIGH);
   digitalWrite(relay3, HIGH);
   digitalWrite(relay4, HIGH);
   digitalWrite(relay5, HIGH);
-Serial.println("Relay1");
-      MsgString="Thank u 4 visiting our stall.pls go to tinyurl.com/svhs22";
-  delay(5000);
+//Serial.println("Relay1");
+    //  MsgString="Thank u 4 visiting our stall.pls go to tinyurl.com/svhs22";
+  delay(200);
 digitalWrite(relay1, HIGH);
 digitalWrite(relay2,  HIGH);
 digitalWrite(relay3,  HIGH);
 digitalWrite(relay4,   HIGH);
 digitalWrite(relay5,   HIGH);
+delay(200);
+
+    }
  
      
     }
 
     else if(OptionString=="@b")
     {
+      Serial.println(OptionString);
+      MsgString="Thank u 4 visiting our stall.pls go to tinyurl.com/svhs22";
+       for(int i=0;i<10;i++)
+      {
+
+     
        digitalWrite(relay1, HIGH);
   digitalWrite(relay2, LOW);
   digitalWrite(relay3, HIGH);
   digitalWrite(relay4, HIGH);
   digitalWrite(relay5, HIGH);
-      Serial.println("Relay2");
+     // Serial.println("Relay2");
 
-      MsgString="Thank u 4 visiting our stall.pls go to tinyurl.com/svhs22";
-
-       delay(5000);
+       delay(200);
 digitalWrite(relay1, HIGH);
 digitalWrite(relay2,  HIGH);
 digitalWrite(relay3,  HIGH);
 digitalWrite(relay4,   HIGH);
 digitalWrite(relay5,   HIGH);
+delay(200);
+    }
     }
 
     else if(OptionString=="@c")
     {
+Serial.println(OptionString);
+      MsgString="Thank u 4 visiting our stall.pls go to tinyurl.com/svhs22";
+      for(int i=0;i<10;i++)
+      {
+       
+     
       digitalWrite(relay1, HIGH);
   digitalWrite(relay2, HIGH);
   digitalWrite(relay3, LOW);
   digitalWrite(relay4, HIGH);
   digitalWrite(relay5, HIGH);
  
-      Serial.println("Relay3");
-       MsgString="Thank u 4 visiting our stall.pls go to tinyurl.com/svhs22";
-
-       delay(5000);
+    //  Serial.println("Relay3");
+      // MsgString="Thank u 4 visiting our stall.pls go to tinyurl.com/svhs22";
+ delay(200);
 digitalWrite(relay1, HIGH);
 digitalWrite(relay2,  HIGH);
 digitalWrite(relay3,  HIGH);
 digitalWrite(relay4,   HIGH);
 digitalWrite(relay5,   HIGH);
+ delay(200);
+      }
     }
 
     else if(OptionString=="@d")
     {
+      Serial.println(OptionString);
+      MsgString="Thank u 4 visiting our stall.pls go to tinyurl.com/svhs22";
+       for(int i=0;i<10;i++)
+      {
 
        digitalWrite(relay1, HIGH);
   digitalWrite(relay2, HIGH);
@@ -149,39 +176,49 @@ digitalWrite(relay5,   HIGH);
   digitalWrite(relay4, LOW);
   digitalWrite(relay5, HIGH);
  
-      Serial.println("Relay4");
-       MsgString="Thank u 4 visiting our stall.pls go to tinyurl.com/svhs22";
+   //   Serial.println("Relay4");
+     //  MsgString="Thank u 4 visiting our stall.pls go to tinyurl.com/svhs22";
 
-       delay(5000);
+       delay(200);
 digitalWrite(relay1, HIGH);
 digitalWrite(relay2,  HIGH);
 digitalWrite(relay3,  HIGH);
 digitalWrite(relay4,   HIGH);
 digitalWrite(relay5,   HIGH);
+delay(200);
+    }
     }
 
     else if(OptionString=="@e")
     {
+
+      Serial.println(OptionString);
+      MsgString="Thank u 4 visiting our stall.pls go to tinyurl.com/svhs22";
+       for(int i=0;i<10;i++)
+      {
       digitalWrite(relay1, HIGH);
   digitalWrite(relay2, HIGH);
   digitalWrite(relay3, HIGH);
   digitalWrite(relay4, HIGH);
   digitalWrite(relay5, LOW);
  
-      Serial.println("Relay5");
+     // Serial.println("Relay5");
 
-      MsgString="Thank u 4 visiting our stall.pls go to tinyurl.com/svhs22";
-       delay(5000);
+    //  MsgString="Thank u 4 visiting our stall.pls go to tinyurl.com/svhs22";
+       delay(200);
 digitalWrite(relay1, HIGH);
 digitalWrite(relay2,  HIGH);
 digitalWrite(relay3,  HIGH);
 digitalWrite(relay4,   HIGH);
 digitalWrite(relay5,   HIGH);
+delay(200);
 
+    }
     }
 
     else if(OptionString=="@f")
 {
+ 
   digitalWrite(relay1, HIGH);
   digitalWrite(relay2, HIGH);
   digitalWrite(relay3, HIGH);
@@ -199,7 +236,7 @@ else if(OptionString=="@g")
 }
 
 MobNoString.trim();
- Serial.println(inputString.length());
+ //Serial.println(inputString.length());
     if(inputString.length()==14)
     {
       SendMessage(MobNoString);
